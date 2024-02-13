@@ -291,9 +291,9 @@ return [
     'menu' => [
         // Navbar items:
         [
-            'type'         => 'navbar-search',
-            'text'         => 'search',
-            'topnav_right' => true,
+            'type'         => 'navbar',
+            'text'         => 'xerfer',
+            'topnav' => true,
         ],
         [
             'type'         => 'fullscreen-widget',
@@ -305,16 +305,14 @@ return [
             'type' => 'sidebar-menu-search',
             'text' => 'search',
         ],
+     
         [
-            'text' => 'blog',
-            'url'  => 'admin/blog',
-            'can'  => 'manage-blog',
-        ],
-        [
-            'text'        => 'pages',
-            'url'         => 'admin/pages',
-            'icon'        => 'far fa-fw fa-file',
-            'label'       => 4,
+            'text' => 'Añadir a la Lista Negra',
+            'url' => 'registrar',
+            'icon' => 'far fa-fw fa-file',
+            'target' => '_blank',
+            'classes' => 'bg-danger', // Aquí puedes agregar las clases personalizadas
+            'label' => 4,
             'label_color' => 'success',
         ],
         
@@ -322,11 +320,13 @@ return [
             'text' => 'categorias',
             'url'  => 'categorias',
             'icon' => 'fa-solid fa-icons',
+            'can' => 'listar Categorias',
         ],
         [
             'text' => 'usuarios',
             'url'  => 'usuarios',
             'icon' => 'fa-solid fa-users',
+            'can' => 'listar Usuarios',
         ],
        
        
@@ -580,5 +580,5 @@ return [
     |
     */
 
-    'livewire' => false,
+    'livewire' => true,
 ];

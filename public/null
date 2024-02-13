@@ -1,9 +1,2 @@
-use App\Models\Categoria;
-
-$ca=Categoria::all();
-use App\Models\Categoria;
-
-$ca=Categoria::all();
-use App\Models\Categoria;
-
-$ca=Categoria::all();
+use App\Models\Persona;
+ Persona::where('nombre', 'like', '%' . "a". '%')->get();

@@ -17,7 +17,11 @@ class PersonaFactory extends Factory
     public function definition(): array
     {
         return [
-            //
+            'nombre' => $this->faker->firstName,
+            'apellidos' => $this->faker->lastName,
+            'ci' => $this->faker->unique()->randomNumber(8),
+            'email' => $this->faker->unique()->safeEmail,
+            'celular' => $this->faker->phoneNumber,
         ];
     }
 }
