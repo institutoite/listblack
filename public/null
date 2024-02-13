@@ -1,0 +1,9 @@
+use App\Models\Categoria;
+
+$ca=Categoria::all();
+use App\Models\Categoria;
+
+$ca=Categoria::all();
+use App\Models\Categoria;
+
+$ca=Categoria::all();
