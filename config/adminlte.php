@@ -63,7 +63,7 @@ return [
     |
     */
 
-    'logo' => '<b>Admin</b>LTE',
+    'logo' => '<b>Lista </b> Negra',
     'logo_img' => 'vendor/adminlte/dist/img/AdminLTELogo.png',
     'logo_img_class' => 'brand-image img-circle elevation-3',
     'logo_img_xl' => null,
@@ -322,6 +322,11 @@ return [
             'text' => 'categorias',
             'url'  => 'categorias',
             'icon' => 'fa-solid fa-icons',
+        ],
+        [
+            'text' => 'usuarios',
+            'url'  => 'usuarios',
+            'icon' => 'fa-solid fa-users',
         ],
        
        

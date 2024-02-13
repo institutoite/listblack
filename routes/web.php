@@ -2,7 +2,7 @@
 
 use App\Http\Controllers\CategoriaController;
 use Illuminate\Support\Facades\Route;
-
+use Illuminate\Support\Facades\Auth;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -14,6 +14,7 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+Auth::routes();
 Route::get('/', function () {
     return view('welcome');
 });
@@ -25,3 +26,8 @@ Route::get('categorias/{categoria}/edit', [CategoriaController::class, 'edit'])-
 Route::put('categorias/{categoria}/update', [CategoriaController::class, 'update'])->name('categoria.update');
 Route::post('categoria/store', [CategoriaController::class, 'store'])->name('categoria.store');
 Route::delete('categoria/{categoria}', [CategoriaController::class, 'eliminar'])->name('categoria.destroy');
+
+
+
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
